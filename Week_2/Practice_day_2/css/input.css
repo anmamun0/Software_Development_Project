@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+@layer base{
+    li{
+        @apply list-none float-left  hover:underline 
+    }
+    .card {
+        @apply border border-black rounded-xl gap-8 p-4
+    }
+}

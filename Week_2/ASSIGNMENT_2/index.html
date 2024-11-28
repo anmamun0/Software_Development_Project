@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <header class="container text-center z-50 justify-items-center"  id="header">
+        <div
+            class="container sm:flex bg-blue-500 text-white justify-between items-center rounded-lg p-4 px-12 fixed shadow-lg">
+            <div class="logo">
+                <h1 class="text-4xl font-bold">Demo</h1>
+            </div>
+            <div class="hidden bg-red-600 p-1 px-4 rounded-md" id="notificationAlert">
+                <span id="alertMessage" class="text-sm text-white "></span>
+            </div>
+
+
+
+            <nav class="quick-section flex gap-8 list-none justify-center">
+                <li class="hover:text-gray-200 cursor-pointer transition-colors duration-200"><a href="#header"
+                        id="home">Home</a> </li>
+                <li class="hover:text-gray-200 cursor-pointer transition-colors duration-200"> <a
+                        href="#searchFild">Foods</a></li>
+                <li class="hover:text-gray-200 cursor-pointer transition-colors duration-200"
+                    onclick="document.getElementById('foodSideBarList').classList.toggle('hidden');">List</li>
+
+                <li class="hover:text-gray-200 cursor-pointer transition-colors duration-200"> <a
+                        href="#footer">Contact</a></li>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--  Food side bar list popup -->
+    <section id="foodSideBarList"
+        class="fixed  top-[95px] sm:top-[72px] right-0 h-screen bg-gray-500  bg-opacity-0  justify-end  hidden z-30 ">
+        <div class="right-side bg-white shadow-lg w-[300px]  h-full p-6 relative rounded-tl-xl rounded-bl-xl">
+            <!-- Close Button -->
+            <button
+                class="absolute top-1/2 transform   bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-800 hover:px-8 focus:outline-none shadow-md rounded-full p-2 px-4"
+                onclick="document.getElementById('foodSideBarList').classList.add('hidden');">
+                <span class="text-xl">&rang;</span> <!-- Angled-right icon -->
+            </button>
+
+            <h1 class="text-lg font-semibold mb-4">List of Food: <span id="count">0</span></h1>
+            <button class="rounded-md bg-red-600 text-white px-4 py-2 w-full" id="removeALL" onclick="removeButton()">
+                Remove All
+            </button>
+            <div id="foodList" class="mb-4 overflow-y-auto h-[80%] justify-items-center ">
+                <!-- Food items will appear here -->
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="container  ">
+        <div class="justify-center flex gap-6 pt-32 px-12">
+            <input type="search"
+                class="border-2 border-gray-400 rounded-lg  w-72 p-2 pl-4 focus-visible:border-white focus-visible:shadow-md focus-visible:outline-none"
+                placeholder="Search players name" id="searchFild">
+
+            <input type="submit" class="rounded-md bg-blue-500 text-white px-4" id="submit" onclick="searchPlayer()">
+        </div>
+    </section>
+
+
+
+
+    <section class="container mt-16">
+        <div class="text-center py-8 text-4xl">
+            <h1>All Foods</h1>
+        </div>
+
+        <!-- Centering the container -->
+        <div class="container players-container flex justify-center items-center gap-4 p-4 m-0">
+            <div class="foods w-full grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-center" id="foods">
+                <!-- Food cards will add here -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="container align-bottom bg-purple-200 pt-16 px-10 mt-20" id="footer">
+        <div class="upperFooter lg:flex lg:justify-between lg:pr-20 justify-items-center">
+            <div class="logo">
+                <h1 class="text-4xl font-bold">Demo</h1>
+            </div>
+            <nav class="quick-section flex gap-8 list-none">
+                <li class=" cursor-pointer transition-colors duration-200"><a href="#header">Home</a> </li>
+                <li class="  cursor-pointer transition-colors duration-200">Foods</li>
+                <li class=" cursor-pointer transition-colors duration-200">About</li>
+                <li class=" cursor-pointer transition-colors duration-200">Contact</li>
+            </nav>
+        </div>
+        <div class="lowerFooter border-t border-gray-700 my-8 py-4 text-center text-gray-800">
+            <p> © 2024 AN Mamun. All rights reserved.</p>
+            <p> Built with Project and  . </p>
+        </div>
+    </footer>  
+
+    <!-- Details Pop Up view -->
+    <div id="foodDetailsModel" class="hidden"></div>
+ 
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

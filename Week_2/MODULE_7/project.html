@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> 
+    .card
+    {
+        border:  1px solid rgb(128, 128, 128);
+        padding: 10px;
+        margin: 5px;
+        justify-content: space-around; 
+        align-items: baseline; 
+        border-radius: 5px;  
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .card img{
+        height: 200px;
+        width: auto;
+    }
+    .card-info
+    {
+        display: flex;
+        justify-content:space-around;
+
+    }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello Shop</h1> -->
+
+    <div class="main-container justify-around grid grid-cols-12">
+        <div id="product-container" class="product-container col-span-9 grid grid-cols-3  gap-15  ">
+            
+
+        </div>
+
+        <div class="card-container w-1/2 border border-dark m-4 p-4 text-center col-span-3 w-auto">
+            <h4>This is Card</h4>
+            <hr class="border border-2 border-black">
+            <div id="card-main-container" class="card-main-container">
+                
+
+            </div>
+            <hr class="border border-2 border-black">
+
+            <h3>Total: <span id="total"></span> </h3>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
