@@ -49,7 +49,7 @@ const create_Player_Card = (food) =>
                         Desh:  ${food.strArea} 
                         </p> 
                         <div class="mt-4 flex justify-between items-center">
-                            <span class="text-md font-bold text-green-600">$12.99</span>
+                            <span class="text-md font-bold text-green-600">$4.99</span>
  
                             <button class="px-2 py-1 bg-blue-600 text-white text-sm font-semibold rounded hover:bg-blue-500 focus:outline-none" onclick="handleAddToCard('${food.idMeal}','${food.strMeal}','${food.strMealThumb}')">
                                 Add to Cart
