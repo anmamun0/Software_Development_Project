@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layour FlexBox</title>
+</head>
+
+<style>
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header
+{
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+section
+{
+    display: -webkit-flex;
+    display:  flex;
+}
+
+nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    background: #ccc;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0
+}
+
+article
+{
+    -webkit-flex:3;
+    -ms-flex:3;
+    flex:3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+footer
+{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+@media (max-width:600px)
+{
+    section{
+        -webkit-flex-direction:column;
+        flex-direction: column;
+    }
+}
+
+</style>
+
+
+<body>
+    <h2>Welcome Our Page!</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nam quia illo quibusdam reprehenderit autem ullam minima? In praesentium nostrum labore magnam, ipsam, molestiae fugit molestias autem, impedit recusandae totam. </p>
+
+    <header>
+        <h2> World</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>Bangladesh</li>
+                <li>Palistain</li>
+                <li>Gaja</li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Bangladesh</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis officia, expedita enim fuga amet praesentium ipsa tenetur rem rerum aspernatur esse unde vel possimus animi illum veritatis ratione cumque.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque inventore, quo ipsum alias, tempore itaque molestiae, incidunt ducimus quia eius nemo nesciunt fugiat quibusdam expedita voluptatem. Saepe illum aliquid in.</p>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Ow, Your are end of the page </p>
+    </footer>
+
+    <section style="padding: 20px; padding-bottom: 200px;">
+        <form action="index.html" target="_blank" method="POST" enctype="multipart/form-data"  >
+
+            <input type="text" placeholder="Enter Name" title="Name Fild" nae="yourname" step="5" pattern="[a-z]">
+
+            <label for="yourname"> HTML </label> <br>
+
+            <input type="radio">
+            <input type="checkbox">
+            <input type="submit">
+            <input type="button">
+            <input type="text"  list="suggestions">
+                <datalist id="suggestions">
+                <option value="Option 1">
+                <option value="Option 2">
+                </datalist>
+        
+
+        <level for="cars"> Choice a Car: </level>
+        <select id = 'car' name="cars"     required autofocus>
+            <option value="volva">Volva</option>
+            <option value="audi">Audi</option>
+            <option value="saad">Saad</option>
+            <option value="sujuki">Sujuki</option>
+            <select id="car" name="cars"   multiple required class="dropdown-style">
+
+        </select>
+
+        <textarea rows="4" cols="50">
+
+        </textarea>
+
+        <button style="height: 30px;">
+            
+        </button>
+
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <optgroup label="Other">
+              <option value="parent">Parent</option>
+              <option value="staff">Staff</option>
+            </optgroup>
+          </select>
+
+          <legend>Personal Information</legend>
+
+          <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Cherry">
+            <option value="Date">
+            <option value="Grapes">
+          </datalist>
+
+          <input type="number" name="age", min="18" max="22">
+
+          <input type="search">
+
+
+    </form>
+
+    <form>
+        <table>
+          <tr>
+            <td><input type="text"></td>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+
+      <p dir="ltr"> THis is paragraph</p>
+      <h2 dir="rtl">This is heading</h2>
+      <bdo dir="ltr"> This is bdo</bdo>
+
+      <progress value="50" max="90" ></progress>
+      <canvas id = 'mycan' width="300px" height="400px"></canvas>
+
+      <blockquote>THis is blockquote </blockquote>
+    </section>
+</body>
+</html>

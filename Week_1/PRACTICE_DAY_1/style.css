@@ -1,0 +1,274 @@
+:root
+{
+    --primary : rgb(17, 130, 250);
+    --bg_color: rgb(235, 235, 235);
+}
+
+*,
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+p{
+    
+    font-size: 25px;
+}
+h1
+{
+    font-family: 'Arial';
+    font-size: 40px;
+}
+h2
+{
+    font-family: 'Arial';
+    font-size: 30px;
+}
+
+button[class='btn']
+{ 
+    height: 45px;
+    background-color: var(--primary);
+    color: #fff; 
+    font-family:  "Arial";
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+img
+{
+    width: 300px;;
+    height: auto;
+}
+
+/* -------------------------------Header  */
+
+header
+{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    align-content: space-between;
+    padding: 10px 40px;
+}
+
+header .logo
+{
+    flex: 30%;
+}
+header .logo img
+{
+    width: 90px;
+    height: 90px;
+}
+header nav
+{
+    flex: 70%;
+    display: flex;
+    gap :30px;
+    justify-content: end;
+}
+header nav > li
+{
+    list-style-type: none; 
+    font-size: 20px;
+    font-family: 'Arial';
+    text-decoration:none; 
+    color: #fff;
+    text-decoration-color: #fff;
+    transition: 0.5s; 
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0,0);
+    cursor:default;
+    
+}
+header nav > li:hover
+{
+    border-bottom: 2px solid var(--primary);
+    cursor:pointer;
+}
+
+
+/* ------------------------home section */
+.container
+{
+    max-width: 1400px;
+    margin : 0 auto;
+    padding: 0 40px;
+
+}
+.hero
+{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(148, 148, 148, 0.9)), url(image/Background_pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+}
+.main
+{
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .home_left
+{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:30px; 
+    
+}
+main .home_left p
+{
+    color: #fff;
+}
+main .home_left h1
+{
+    width: 60%; 
+    color: #fff;
+}
+main .home_right
+{   
+}
+
+main .home_right img
+{
+    width: auto;
+    height: 80vh;
+}
+
+
+/* --------------------------Badegs */
+
+.badges
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+}
+.badges img
+{
+    width: 120px;
+    height: auto;
+    transition: 0.4s;
+}
+.badges img:hover
+{
+    transform: scale(1.1); 
+}
+.badges li
+{
+    list-style-type: none;
+}
+
+.badges li:nth-child(4) img
+{
+    width: 150px;
+}
+ 
+/*  --------services-------------------- */
+
+.services
+{
+    text-align: center;
+    padding: 50px 10%;
+    background-color: var(--bg_color);
+}
+
+.services .service_title
+{
+    padding: 100px 50px; 
+}
+.services .service_title p
+{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.services .service_cointainer
+{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.services .service_cointainer .box
+{ 
+    height: 250px; 
+    text-align: center;
+    align-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    transition: 0.3s;
+}
+
+.services .service_cointainer .box i
+{
+    font-size: 60px;
+    color: var(--primary);
+    margin-bottom: 30px;
+
+}
+.services .box p
+{
+    font-size: 15px;
+}
+.services .service_cointainer .box:nth-child(2)
+{
+    box-shadow: 1px 0px 20px 2px #a7a7a7;
+}
+.services .service_cointainer .box:nth-child(2):hover
+{
+    border: 1px solid var(--primary)
+}
+.services .service_cointainer .box:hover
+{
+    box-shadow: 1px 0px 20px 2px #d6d6d6;
+
+}
+
+
+/*  -----------about section ------------------- */
+
+
+.about
+{
+    display: flex;
+    padding: 100px 50px;
+    align-content: space-between;
+    
+}
+
+.about .image_part
+{
+    flex: 30%;
+    align-content: baseline;
+}
+.about .image_part img
+{ 
+    height:  400px;
+    width: auto;
+
+}
+
+.about .about_section
+{
+    flex: 60%;
+    
+}

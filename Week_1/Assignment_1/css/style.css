@@ -1,0 +1,93 @@
+:root
+{
+    --dark: #2b3035;
+    /* --dark:#fff; */
+    --white:#fff;
+    /* --white:#000; */
+}
+
+*,
+body
+{
+    background-color: var(--dark);
+}
+
+.container,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a, 
+button
+{
+    color: var(--white);
+    background-color: transparent;
+}
+
+i{
+    background-color: transparent;
+}
+ 
+
+.home
+{
+    padding-bottom: 0;
+    margin-bottom: 0; 
+}
+
+.tag button
+{
+    font-size: 13px;
+    padding: 6px;
+    border: 1px solid #b1b1b123;
+    background-color: #a3a3a350;  
+    color: var(--white);
+}
+ 
+.footer
+{
+    background-color: #272727;
+}
+
+.skill button:hover
+{
+    background-color: rgb(95, 93, 93);
+} 
+ 
+.home_main
+{ 
+    border-bottom: 1px solid var(--white);
+} 
+
+.home_main  img
+{ 
+    height: 500px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .home_main {
+      flex-direction: column ;
+
+    }  
+    .home_main img
+    {
+        margin-top: 20px;
+    }
+  }
+  
+
+@media (max-width: 1000px) {
+     
+   
+    .education
+    {
+        margin-top:20px;
+    }
+  }

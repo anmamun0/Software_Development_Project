@@ -1,0 +1,38 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+
+*, 
+*::after, 
+*::before
+{
+    box-sizing: border-box;
+}
+
+.test
+{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#one
+{
+    background-color: #8c7ae6;
+    border: 10px solid #000;
+    box-sizing: content-box;
+
+}
+#two
+{
+    background: #192a56;
+    border: 10px solid #000;
+    box-sizing: border-box;
+    /*  always use border-box */
+} 
+

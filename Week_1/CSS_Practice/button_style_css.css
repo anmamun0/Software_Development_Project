@@ -1,0 +1,48 @@
+form
+{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+input[type='text']
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #000;
+    margin-right: 20px;
+    float: left;
+}
+
+input[type='button']
+{
+    background: #227093;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px; 
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+input:not(:placeholder-shown) + input[type='button']
+{
+    display: block;
+}
+
+
+input:placeholder-shown
+{
+    border: 1px solid green;
+}
+
+input:disabled
+{
+    background-color: #227093;
+}
+
+
+

@@ -1,0 +1,151 @@
+:root
+{
+    --primary:hsl(216, 84%, 81%);
+    --navColor:rgb(141, 41, 2);
+}
+
+.main_area
+{  
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* flex-flow: row; */
+    justify-content: center;
+}
+
+.main_area h2
+{
+    color: black;
+    margin: 0;
+}
+
+.child
+{
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    margin : 20px; 
+    color: black;
+    float: left;
+    flex-basis: 30%; /* flex-wrap:wrap*/
+    align-items: flex-end;
+
+}
+
+
+.main2
+{ 
+    height: 700px;
+    border: 1px solid black;
+    background-color: rgb(160, 160, 160);
+    display: flex;  
+    align-items: baseline;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* flex-wrap: column wrap; */
+}
+.main2 > div
+{
+    background-color: blueviolet;
+    width: 100px;
+    padding: 20px;
+    margin : 20px; 
+    height: 100px;  
+    text-align: center;
+    line-height: 75px; 
+    
+}
+
+.main2 .dd
+{
+    background-color: red; 
+    flex-grow: 3;
+}
+
+
+
+
+
+
+
+
+
+*,
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+p,
+li{
+    font-size: 24px;
+} 
+
+header
+{
+    background-color: var(--primary);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between; 
+    padding-left: 50px;
+}
+header nav{
+    display: flex;
+    gap: 25px; 
+    padding-right: 100px;
+    font-weight: 700;
+    color: var(--navColor)
+}
+header nav > li
+{
+    list-style-type: none; 
+}
+
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+section .left_side
+{
+    flex: 30%;
+    /* flex-grow: 1; */ 
+    background-color: #f1f1f1; 
+    padding: 20px;
+    
+}
+section .right_side
+{
+    flex: 70%;
+    /* flex-grow: 5; */
+    background-color: #fff;
+    padding: 20px;
+}
+
+section  .image
+{
+    width: 100%; 
+    background-color: #aaa; 
+    padding: 20px;
+}
+ 
+
+footer
+{
+    background-color: var(--primary);
+    height: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center; 
+}

@@ -1,0 +1,39 @@
+body
+{
+    margin: 0; 
+}
+
+div
+{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    /* margin-top: 20px; */
+    /* margin-left: 20px; */
+}
+
+.main
+{
+    
+    /* default position */
+    /* position: static;  */
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.sec
+{
+    background-color: blueviolet;
+}
+
+
+.child
+{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    left: auto;
+    ri ght: 0;
+}
